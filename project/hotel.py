@@ -33,9 +33,9 @@ class Hotel:
         self.guests -= guests_to_remove
 
     def print_status(self):
-        return print(f"Hotel {self.name} has {self.guests} total guests\n\
-Free rooms: {', '.join([str(i) for i in self.rooms if not i.is_taken])}\n\
-Taken rooms: {', '.join([str(i) for i in self.rooms if i.is_taken])}")
+        print(f"Hotel {self.name} has {self.guests} total guests")
+        print(f"Free rooms: {', '.join([str(i) for i in self.rooms if not i.is_taken])}")
+        print(f"Taken rooms: {', '.join([str(i) for i in self.rooms if i.is_taken])}")
 
 
 
